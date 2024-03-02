@@ -61,8 +61,8 @@ class Rectangle:
         str = ""
         if self.__width == 0 or self.__height == 0:
             return str
-        for colum in self.__height:
-            for row in self.__width:
+        for colum in range(self.__height):
+            for row in range(self.__width):
                 string += hash
             string += '\n'
         return string.strip()
