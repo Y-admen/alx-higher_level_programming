@@ -58,7 +58,7 @@ class Rectangle:
 
     def __str__(self):
         hash = "#"
-        str = ""
+        string = ""
         if self.__width == 0 or self.__height == 0:
             return str
         for colum in range(self.__height):
