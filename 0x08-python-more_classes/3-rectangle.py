@@ -60,7 +60,7 @@ class Rectangle:
         hash = "#"
         string = ""
         if self.__width == 0 or self.__height == 0:
-            return str
+            return string
         for colum in range(self.__height):
             for row in range(self.__width):
                 string += hash
