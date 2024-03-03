@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""base module"""
+"""regtangle class"""
 from base import Base
 
 
