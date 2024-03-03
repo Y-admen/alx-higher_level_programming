@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """base module"""
-from base import Base
+from .base import Base
 
 
 class Regtangle(Base):
