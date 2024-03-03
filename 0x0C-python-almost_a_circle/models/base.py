@@ -2,7 +2,6 @@
 """the class base file"""
 
 
-
 class Base:
     """the base class"""
     __nb_objects = 0
