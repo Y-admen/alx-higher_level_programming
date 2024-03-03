@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""module of regtangle"""
-from models.base import Base
+from base import Base
 
 
 class Regtangle(Base):
