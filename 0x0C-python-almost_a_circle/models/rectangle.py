@@ -78,3 +78,16 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
+    def area(self):
+        """Calculate the area of a rectangle"""
+        return self.__width * self.__height
+    def display(self):
+        hash = "#"
+        string = ""
+        if self.__width == 0 or self.__height == 0:
+            return string
+        for colum in range(self.__height):
+            for row in range(self.__width):
+                string += hash
+            string += '\n'
+        return string.strip()
