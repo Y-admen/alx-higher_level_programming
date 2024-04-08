@@ -1,12 +1,13 @@
 #!/usr/bin/node
 const args = process.argv.slice(2);
-const num = parseInt(args[0], 10);
-if (isNaN(num)) {
-  console.log('1');
-} else {
-  let fac = 1;
-  for (let i = num; i >= 1; i -= 1) {
-    fac *= i;
+const num = Number(args[0]);
+
+function factorial (n) {
+  if (isNaN(n) || n === 0) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
   }
-  console.log(fac);
 }
+
+console.log(factorial(num));
