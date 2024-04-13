@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-import MySQLdb
-from sys import argv
-
 """
 Connects to the MySQL database, filters the states table by name,
 and prints the results.
 """
-
+import MySQLdb
+from sys import argv
 
 if __name__ == "__main__":
 

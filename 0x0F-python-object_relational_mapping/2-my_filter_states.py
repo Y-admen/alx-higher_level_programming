@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-import MySQLdb
-from sys import argv
-
 """
 Retrieves all states from the database that match
 the name passed as argument.
 """
+import MySQLdb
+from sys import argv
 
 if __name__ == "__main__":
 

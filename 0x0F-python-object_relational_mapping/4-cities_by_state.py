@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-from sys import argv
-import MySQLdb
 """
 Prints all cities from the database that are in a given state.
 """
-
+from sys import argv
+import MySQLdb
 
 if __name__ == "__main__":
 

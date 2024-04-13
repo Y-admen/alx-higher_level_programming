@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-import MySQLdb
-from sys import argv
-
 """
 Connects to a MySQL database and lists all states from the database.
 """
-
+import MySQLdb
+from sys import argv
 
 if __name__ == "__main__":
 
@@ -15,7 +13,7 @@ if __name__ == "__main__":
 
     cursor = db.cursor()
 
-    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%'")
+    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC;")
 
     states = cursor.fetchall()
 
