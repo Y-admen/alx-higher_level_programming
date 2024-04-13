@@ -16,7 +16,8 @@ if __name__ == "__main__":
     state_name = argv[4]
 
     cursor.execute(
-            "SELECT * FROM states WHERE name LIKE BINARY %s", (argv[4],)
+            """SELECT * FROM states WHERE name LIKE BINARY '{}'
+            ORDER BY id ASC""".format(argv[4])
             )
 
     states = cursor.fetchall()
