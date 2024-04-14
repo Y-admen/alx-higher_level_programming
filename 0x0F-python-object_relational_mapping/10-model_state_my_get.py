@@ -17,7 +17,8 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     state_name_to_search = argv[4]
-    state = session.query(State).filter(State.name == state_name_to_search).first()
+    state = session.query(State).filter(
+            State.name == state_name_to_search).first()
 
     if state is not None:
         print(state.id)
