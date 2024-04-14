@@ -14,13 +14,14 @@ if __name__ == "__main__":
     state_name = argv[4]
     cursor = db.cursor()
 
-    cursor.execute("""SELECT cities.id, cities.name, states.name FROM cities
+    cursor.execute("""SELECT cities.name FROM cities
                    JOIN states ON cities.state_id = states.id
-                   WHERE states.name=%s ORDER BY id ASC""", (state_name,)
+                   WHERE states.name=%s ORDER BY cities.id ASC""", (state_name,)
                    )
 
     cities = cursor.fetchall()
 
-    print(",".join([row[1] for row in cities]))
+    print(", ".join([row[0] for row in cities]))
 
+    cursor.close()
     db.close()
