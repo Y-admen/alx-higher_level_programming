@@ -17,4 +17,4 @@ if __name__ == "__main__":
     with request.urlopen(req) as req:
         mail = req.read()
         "convert the bytes back into a human-readable string."
-        print("Your email is: {}".format(mail.decode('utf-8')))
+        print(mail.decode('utf-8'))
