@@ -6,6 +6,6 @@ req(url, (error, response) => {
   if (error) {
     console.err(error);
   } else {
-    console.log('code: ', response.statusCode);
+    console.log('code:', response.statusCode);
   }
 });
