@@ -5,7 +5,7 @@ const url = process.argv[2];
 let count = 0;
 req(url, (error, response, body) => {
   if (error) {
-    console.log(error);
+    console.error(error);
   }
   const obj = JSON.parse(body);
   const results = obj.results; // accessing the result
