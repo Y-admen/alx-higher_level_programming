@@ -14,5 +14,5 @@ req(url, (error, response, body) => {
       count++;
     }
   });
-  console.log(error || count);
+  console.log(count);
 });
